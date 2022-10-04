@@ -12,6 +12,9 @@ class contentController
 
         $data = $api->getToken();
         $tokenString = $data["result"]["token"];
+
+        $login = $api->getSessionName($tokenString);
+        $sessionName = $login["result"]["sessionName"];
     }
 }
 
