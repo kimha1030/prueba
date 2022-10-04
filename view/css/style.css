@@ -27,3 +27,16 @@ button.showResult {
   background-color: slategray;
   color: white;
 }
+
+.tableResult,
+td,
+tr,
+th {
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+th,
+td {
+  padding: 10px;
+}
