@@ -9,3 +9,21 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+.container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button.showResult {
+  width: fit-content;
+  padding: 0.8em 2em;
+  border: 1px solid slategray;
+  margin-bottom: 2em;
+  cursor: pointer;
+  background-color: slategray;
+  color: white;
+}

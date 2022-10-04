@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Prueba</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./view/css/style.css">
     </head>
     <body>
         <header>
@@ -16,6 +16,6 @@
                 <div class="containerResult" id="containerResult"></div>
             </div>
         </main>
-        <script src="./js/script.js"></script>
+        <script src="./view/js/script.js"></script>
     </body>
 </html>
