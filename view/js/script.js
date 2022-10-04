@@ -16,7 +16,6 @@ function getResponse() {
 }
 
 function printData(data) {
-  let dataInfo = data.data.result;
   let containerResult = document.getElementById("containerResult");
   containerResult.innerHTML = "";
 
@@ -38,6 +37,7 @@ function printData(data) {
   insertContent(dateTitle, "th", "Date created", row);
   tblBody.appendChild(row);
 
+  let dataInfo = data.data.result;
   dataInfo.map((item) => {
     let row = document.createElement("tr");
 
