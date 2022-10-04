@@ -2,6 +2,10 @@
 require_once("./controller/contentController.php");
 
 $content = new contentController();
-$content->index();
 
+if (!empty($_GET)) {
+    $content->loadData();
+} else {
+    $content->index();
+}
 ?>
