@@ -7,14 +7,18 @@ class contentController
         require_once "view/content.php";
     }
 
-    public function loadData(){
+    public function loadData() {
         $api = new Api();
 
         $data = $api->getToken();
         $tokenString = $data["result"]["token"];
-
+        
         $login = $api->getSessionName($tokenString);
         $sessionName = $login["result"]["sessionName"];
+
+        $query = $api->getData($sessionName);
+        $data['data'] = $query ;
+        echo json_encode($data);
     }
 }
 
