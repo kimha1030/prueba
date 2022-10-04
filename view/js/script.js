@@ -18,6 +18,7 @@ function getResponse() {
 function printData(data) {
   let dataInfo = data.data.result;
   let containerResult = document.getElementById("containerResult");
+  containerResult.innerHTML = "";
   dataInfo.map((item) => {
     let id = item.id;
     let contact = item.contact_no;
